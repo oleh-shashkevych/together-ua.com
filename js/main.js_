@@ -1,0 +1,11 @@
+$(document).ready(function() {
+    $('.t-header__burger').on('click', function() {
+      $('.t-header__list-main').toggleClass('active');
+      $('.burger-icon').toggleClass('active');
+    });
+  
+    $('.t-header__link').on('click', function() {
+      $('.t-header__list-main').removeClass('active');
+      $('.burger-icon').removeClass('active');
+    });
+  });
